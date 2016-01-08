@@ -19,18 +19,25 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
+    for (int i = 0; i<10000; i++) {
+        
+    }
     
-    [LOFlipProgressHUD shareInstance].images =
+    [LOFlipProgressHUD shareInstance].images =@[
+                                                [UIImage imageNamed:@"poo"],
+                                                [UIImage imageNamed:@"unicorn"],
+                                                [UIImage imageNamed:@"year_of_monkey"],
+                                                [UIImage imageNamed:@"year_of_rabbit"],
+                                                [UIImage imageNamed:@"year_of_rat"],
+                                                ];
     
     [LOFlipProgressHUD show];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 @end

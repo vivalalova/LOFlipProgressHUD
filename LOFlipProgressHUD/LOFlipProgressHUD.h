@@ -11,7 +11,8 @@
 @interface LOFlipProgressHUD : UIView
 
 @property (nonatomic, strong) NSArray <UIImage *> *images;
-
+@property (nonatomic, strong) UIColor *backgroundColor;
+@property (nonatomic, strong) UIColor *foregroundColor;
 + (instancetype)shareInstance;
 
 + (void)show;
